@@ -1,0 +1,39 @@
+{
+  "inspiration": "Sanzo Wada, Yellow Orange / Dark Tyrian Blue, combination 2",
+  "digital_reference": "https://colors.elwyn.co/",
+  "reference_pair": [
+    "#F99D1B",
+    "#12354E"
+  ],
+  "note": "Adapted screen palette with neutral text colors, not exact historic print colors",
+  "themes": {
+    "dark": {
+      "bg": "#09141c",
+      "bar": "#0d1c27",
+      "panel": "#0c1822",
+      "line": "#304e5e",
+      "grid": "#1b3645",
+      "fg": "#eee9db",
+      "secondary": "#b7cbd0",
+      "muted": "#85a7b7",
+      "dim": "#4f7285",
+      "accent": "#e7b26b",
+      "blue": "#8bb8cb",
+      "green": "#a9bfae"
+    },
+    "light": {
+      "bg": "#f3efe5",
+      "bar": "#e9e5d9",
+      "panel": "#f8f5ec",
+      "line": "#a4b5b7",
+      "grid": "#d8dfda",
+      "fg": "#12354e",
+      "secondary": "#274c5f",
+      "muted": "#516c78",
+      "dim": "#8a9ca1",
+      "accent": "#925e1a",
+      "blue": "#34697d",
+      "green": "#426451"
+    }
+  }
+}

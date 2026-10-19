@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mark-Paul Tamas | Local README Preview</title><style>
+:root{color-scheme:dark light;--bg:#0d1117;--fg:#d8dee4;--border:#30363d;--link:#8dbbd0;--code:#17222c;--muted:#869ca9}
+@media(prefers-color-scheme:light){:root{--bg:#fff;--fg:#24292f;--border:#d0d7de;--link:#245d79;--code:#f0f0eb;--muted:#607985}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:1040px;margin:0 auto;padding:20px 28px 70px}nav{display:flex;justify-content:space-between;align-items:center;margin:0 0 18px;color:var(--muted);font:12px monospace;letter-spacing:.04em}
+button{color:var(--fg);background:var(--code);border:1px solid var(--border);border-radius:5px;padding:7px 10px;cursor:pointer}
+img{display:block;max-width:100%;height:auto}h2{font-size:22px;padding-bottom:8px;border-bottom:1px solid var(--border);margin:32px 0 16px;font-weight:600}h2 code{background:none;padding:0;font-size:18px;font-weight:500}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}p{margin:16px 0}code{background:var(--code);padding:.12em .35em;border-radius:4px;font:85% ui-monospace,SFMono-Regular,Consolas,monospace}strong{font-weight:600}sub{color:var(--muted);font-size:12px}
+@media(max-width:640px){main{padding:12px 16px 40px}body{font-size:15px}h2{font-size:20px}nav{font-size:10px}button{font-size:11px}}
+</style></head><body><main><nav><span>LOCAL README PREVIEW</span><button type="button">Static preview</button></nav><article><picture>
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="assets/header-light-mobile.png">
+  <source media="(max-width: 640px) and (prefers-reduced-motion: reduce)" srcset="assets/header-dark-mobile.png">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="assets/header-light.png">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-dark.png">
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="assets/header-light-mobile.gif">
+  <source media="(max-width: 640px)" srcset="assets/header-dark-mobile.gif">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-light.gif">
+  <img src="assets/header-dark.gif" alt="Mark-Paul Tamas, Product Security Engineer. Cryptography, secure software and embedded systems. A terminal-style identity reveal and AES state illustration accompany selected merged contributions to Mbed TLS, libspdm and Zephyr." width="1600">
+</picture>
+<h2><code>01 / profile</code></h2>
+<p>I'm <strong>Mark-Paul Tamas</strong>, a <strong>Product Security Engineer</strong> working across security architecture, threat modeling and risk assessment, vulnerability assessment, and secure software engineering. My professional experience spans automotive, industrial/OT, and medical-device security contexts.</p>
+<p>I'm particularly interested in where architecture meets implementation: cryptographic key handling, protocol state management, embedded software, and reproducible security testing.</p>
+<h2><code>02 / merged upstream work</code></h2>
+<p><strong>Mbed TLS / TF-PSA-Crypto</strong> · <code>cryptographic key handling</code><br />
+Fixed missing zeroization of sensitive shared-secret material in <code>psa_key_agreement()</code> across return paths.<br />
+<a href="https://github.com/Mbed-TLS/TF-PSA-Crypto/pull/886">Merged fix</a> · <a href="https://github.com/Mbed-TLS/TF-PSA-Crypto/pull/890">1.1 backport</a></p>
+<p><strong>DMTF / libspdm</strong> · <code>protocol security</code><br />
+Fixed stale peer DIGESTS and pending-request state retained by <code>libspdm_reset_context()</code>, including cached request data, and added regression coverage.<br />
+<a href="https://github.com/DMTF/libspdm/pull/4199">Merged fix</a></p>
+<p><strong>Zephyr RTOS</strong> · <code>embedded software and testing</code><br />
+Added 11 regression tests for Bluetooth Host key-pool behavior and persisted-key loading. Also improved <code>ROM_START_OFFSET</code> defaults for Cortex-M vector-table alignment in MCUboot configurations.<br />
+<a href="https://github.com/zephyrproject-rtos/zephyr/pull/122133">Bluetooth tests</a> · <a href="https://github.com/zephyrproject-rtos/zephyr/pull/120785">Boot configuration</a></p>
+<h2><code>03 / published research</code></h2>
+<p><strong><a href="https://ieeexplore.ieee.org/document/11583673">A Comparative Entropy Analysis of BJT Avalanche Noise, SDR Noise and Algorithmic PRNGs</a></strong><br />
+IEEE · 2026<br />
+Experimental analysis of physical-noise and algorithmic randomness sources.</p>
+<p><strong><a href="https://doi.org/10.3390/electronics15112446">Threat Analysis and Risk Assessment of the Takeover Request Component in Advanced Driver Assistance Systems for SAE Level 2–3</a></strong><br />
+<em>Electronics</em> · 2026<br />
+Cybersecurity analysis of automated-driving handover functions.</p>
+<p><strong><a href="https://doi.org/10.3390/app15031400">Threat Analysis and Risk Assessment (TARA) of an Autonomous Emergency Braking (AEB) System</a></strong><br />
+<em>Applied Sciences</em> · 2025<br />
+Threat modeling and risk assessment of a safety-critical automotive function.</p>
+<h2><code>04 / connect</code></h2>
+<p><a href="https://www.linkedin.com/in/mark-paul-tamas-7a77b0264/">LinkedIn</a> · <a href="https://github.com/search?q=author%3Av1rtu3x+is%3Apr+is%3Amerged&amp;type=pullrequests">Merged pull requests</a></p>
+<p><sub><a href="README-static.md">Static version</a></sub></p>
+</article></main><script>
+const button=document.querySelector('button');let paused=false;
+button.addEventListener('click',()=>{paused=!paused;document.querySelectorAll('picture source').forEach(el=>{el.srcset=paused?el.srcset.replace(/\.gif/g,'.png'):el.dataset.original});const img=document.querySelector('picture img');img.src=paused?img.src.replace(/\.gif/g,'.png'):img.dataset.original;button.textContent=paused?'Play animation':'Static preview'});
+document.querySelectorAll('picture source,picture img').forEach(el=>el.dataset.original=el.srcset||el.src);
+</script></body></html>

@@ -1,0 +1,19 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated validation and preview outputs
+/source/*-validation.json
+/docs/validation.json
+/docs/browser-validation.json
+/docs/preview-*.png
+
+# Distribution checksum manifest
+/MANIFEST.sha256
